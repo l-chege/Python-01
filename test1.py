@@ -22,8 +22,8 @@ def calculator():
     print("Simple Calculator")
 
     # Taking user input for the first and second numbers
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
 
     # Displaying available operations
     print("1. Add")
