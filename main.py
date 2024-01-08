@@ -35,6 +35,13 @@ def days_to_units(num_of_days, custom_message):
 days_to_units(35, "Awesome!")
 days_to_units(20, "Looks good!")
 
+#return value statement
+def days_to_units(num_of_days):                                                                   #function is executed when called
+    return f"{num_of_days} days are {num_of_days * calculation_to_units} {name_of_unit}"
+                                                                                                  #return value is assigned/stored to variable 
+my_var = days_to_units(20)
+print(my_var)                                                                                     #variable is printed
+
 #scope of variables
 def scope_test(num_of_days):
     my_var = "variable inside function"
@@ -43,3 +50,11 @@ def scope_test(num_of_days):
     print(my_var)   #local variable scope
 
 scope_test(35)
+
+#user-input built-in function
+user_input = input("Hey user, enter number of days and I will convert it to hrs! \n")
+user_input_number = int(user_input)
+
+calculated_value = days_to_units(user_input_number)
+print(calculated_value)
+
