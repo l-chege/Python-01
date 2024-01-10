@@ -85,15 +85,12 @@ def validate_and_execute():
     except ValueError:
         print("Your input is not a valid number. Don't ruin my program!")
 
-#<-------
-while True:                 #while loop - program continues executing
-    user_input = input("Hey user, enter number of days and I will convert it to hrs! \n")
-    validate_and_execute()                                      
-    
-user_input = ""              # assign an emty string to user_input
+#while loop stop execution 
+user_input = ""              # assign an empty string to user_input
 while user_input != "exit":        #loop breaks and stops program (condition gets evaluated)
     user_input = input("Hey user, enter number of days and I will convert it to hrs! \n")
     validate_and_execute()                                         #user is  prompted for its input #function is called & input is validated and executed.
+
 
 
 
