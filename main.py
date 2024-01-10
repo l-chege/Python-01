@@ -66,9 +66,27 @@ def validate_and_execute():
         elif user_input_number == 0:
             print("you entered a 0, please enter a valid positive number")
     else:                                                                                  #if the input is not a number, the program will print the following message
-        print("your input is not a valid number. Don't ruin my program!")
+        print("Your input is not a valid number. Don't ruin my program!")
 
 user_input = input("Hey user, enter number of days and I will convert it to hrs! \n")            #user-input built-in function
+validate_and_execute()
+
+#exception error handling with try/except
+def validate_and_execute():
+    try: 
+        user_input_number = int(user_input)
+        if user_input_number > 0:
+            calculated_value = days_to_units(user_input_number)
+            print(calculated_value)
+        elif user_input_number == 0:
+            print("you entered a 0, please enter a valid positive number")
+        else:
+            print("you entered a negative number, no conversion for you!")
+    except ValueError:
+        print("Your input is not a valid number. Don't ruin my program!")
+
+
+user_input = input("Hey user, enter number of days and I will convert it to hrs! \n")
 validate_and_execute()
 
 
