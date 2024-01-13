@@ -74,7 +74,7 @@ validate_and_execute()
 #exception error handling with try/except
 def validate_and_execute():
     try: 
-        user_input_number = int(user_input)
+        user_input_number = int(num_of_days_element)
         if user_input_number > 0:
             calculated_value = days_to_units(user_input_number)
             print(calculated_value)
@@ -88,8 +88,12 @@ def validate_and_execute():
 #while loop stop execution 
 user_input = ""              # assign an empty string to user_input
 while user_input != "exit":        #loop breaks and stops program (condition gets evaluated)
-    user_input = input("Hey user, enter number of days and I will convert it to hrs! \n")
-    validate_and_execute()                                         #user is  prompted for its input #function is called & input is validated and executed.
+    user_input = input("Hey user, enter number of days as a comma separated list and I will convert it to hrs! \n")        #user is  prompted for its input #function is called & input is validated and executed.
+    print(type(user_input.split(",")))
+    print(user_input.split(","))        #split() is a built-in function that splits a string into a list
+    for num_of_days_element in user_input.split(", "):              #for loop iterates over each character in the user_input string
+        validate_and_execute()                  
+                                       
 
 
 
