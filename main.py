@@ -110,7 +110,7 @@ my_list.append("April")                                 #adding elements to list
 print(my_list[3])"""
 
 
-#basic set operations
+"""#basic set operations
 my_set = {"January", "February", "March"}
 for element in my_set:
     print(element)                                       
@@ -118,7 +118,7 @@ for element in my_set:
 my_set.add("April")                                      #adding elements to set
 print(my_set)
 my_set.remove("January")                                 #removing elements from set
-print(my_set)
+print(my_set)"""
 
 
 
