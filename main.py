@@ -89,16 +89,26 @@ def validate_and_execute():
 user_input = ""              # assign an empty string to user_input
 while user_input != "exit":        #loop breaks and stops program (condition gets evaluated)
     user_input = input("Hey user, enter number of days as a comma separated list and I will convert it to hrs! \n")        #user is  prompted for its input #function is called & input is validated and executed.
-    print(type(user_input.split(",")))
-    print(user_input.split(","))        #split() is a built-in function that splits a string into a list
+    list_of_days = user_input.split(", ")        #split() is a built-in function that splits a string into a list
+
+    print(list_of_days)
+    print(set(list_of_days))        #set() is a built-in function that removes duplicate elements from a list
+
+    print(type(list_of_days))       #type() is a built-in function that returns the type of an object
+    print(type(set(list_of_days)))  
+    
+    """print(type(user_input.split(",")))
+    print(user_input.split(","))  """      
     for num_of_days_element in user_input.split(", "):              #for loop iterates over each character in the user_input string
         validate_and_execute()      
 
-#basic list operations
+"""#basic list operations
 my_list = ["January", "February", "March"] 
 print(my_list[0])                                       #accessing list elements
 my_list.append("April")                                 #adding elements to list
-print(my_list[3])
+print(my_list[3])"""
+
+
                                        
 
 
