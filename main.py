@@ -92,7 +92,13 @@ while user_input != "exit":        #loop breaks and stops program (condition get
     print(type(user_input.split(",")))
     print(user_input.split(","))        #split() is a built-in function that splits a string into a list
     for num_of_days_element in user_input.split(", "):              #for loop iterates over each character in the user_input string
-        validate_and_execute()                  
+        validate_and_execute()      
+
+#basic list operations
+my_list = ["January", "February", "March"] 
+print(my_list[0])                                       #accessing list elements
+my_list.append("April")                                 #adding elements to list
+print(my_list[3])
                                        
 
 
